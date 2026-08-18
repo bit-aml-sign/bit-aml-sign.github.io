@@ -237,36 +237,7 @@
       color: var(--text-2);
     }
 
-    .policy-ref {
-      background: var(--accent-tint);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 16px 18px;
-      margin-bottom: 20px;
-    }
-
-    .policy-ref p {
-      font-size: 13.5px;
-      line-height: 1.6;
-      color: var(--text-2);
-      margin-bottom: 10px;
-    }
-
-    .policy-link {
-      display: inline-block;
-      font-family: var(--sans);
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--accent);
-      text-decoration: none;
-      letter-spacing: -0.005em;
-    }
-
-    .policy-link:hover {
-      text-decoration: underline;
-    }
-
-    .summary-lead {
+                    .summary-lead {
       font-size: 12.5px;
       color: var(--text-3);
       margin-bottom: 18px;
@@ -765,11 +736,6 @@
 
         <!-- English -->
         <div id="agreement-en" class="lang-content active">
-          <div class="policy-ref">
-            <p data-i18n="policyRefText">As an employee, you are required to comply with BIT's official Anti-Money Laundering &amp; Counter-Terrorist Financing (AML/CFT) Policy. Please read the full policy before signing:</p>
-            <a class="policy-link" href="https://www.bit.com/aml" target="_blank" rel="noopener noreferrer">www.bit.com/aml ↗</a>
-          </div>
-
           <p class="summary-lead" data-i18n="summaryLead">By signing, you confirm the following personal obligations. These are aligned with BIT's AML/CFT policy and applicable Singapore requirements — MAS Notice PSN02 (Digital Payment Token Service), the CDSA and TSOFA. The full policy governs.</p>
 
           <div class="clause">
@@ -815,11 +781,6 @@
 
         <!-- Chinese -->
         <div id="agreement-zh" class="lang-content" lang="zh-CN">
-          <div class="policy-ref">
-            <p data-i18n="policyRefText">作为员工，您须遵守 BIT 的官方《反洗钱与反恐怖主义融资（AML/CFT）政策》。签署前请阅读完整政策原文：</p>
-            <a class="policy-link" href="https://www.bit.com/aml" target="_blank" rel="noopener noreferrer">www.bit.com/aml ↗</a>
-          </div>
-
           <p class="summary-lead" data-i18n="summaryLead">签署即表示您确认以下个人义务。以下内容与 BIT 的 AML/CFT 政策及适用的新加坡要求一致——MAS Notice PSN02（数字支付代币服务）、CDSA 及 TSOFA。以完整政策为准。</p>
 
           <div class="clause">
@@ -855,7 +816,7 @@
           <div class="clause">
             <span class="clause-num">06</span>
             <h3>年度更新</h3>
-            <p>本人理解本确认书须每年更新一次，或在政策发生重大变更时提前更新；违规可能导致纪律处分及潜在法律责任。</p>
+            <p>本人理解本声明须每年更新一次，或在政策发生重大变更时提前更新；违规可能导致纪律处分及潜在法律责任。</p>
           </div>
 
           <div class="source-note">
@@ -1031,7 +992,6 @@
         periodParty: 'Policy Owner',
         periodYear: 'Attestation Period',
         agreementMeta: 'Policy reference & your obligations',
-        policyRefText: "As an employee, you are required to comply with BIT's official Anti-Money Laundering & Counter-Terrorist Financing (AML/CFT) Policy. Please read the full policy before signing:",
         summaryLead: 'By signing, you confirm the following personal obligations. These are aligned with BIT\'s AML/CFT policy and applicable Singapore requirements — MAS Notice PSN02 (Digital Payment Token Service), the CDSA and TSOFA. The full policy governs.',
         sigTitle: 'Sign Attestation',
         sigStatus: 'PENDING SIGNATURE',
@@ -1060,15 +1020,14 @@
       zh: {
         htmlLang: 'zh-CN',
         docLabel: 'AML/CFT 合规',
-        eyebrow: '合规 · 需完成年度确认',
-        title: '反洗钱与反恐怖主义融资合规确认书',
-        subtitle: '请审阅下方 BIT 的 AML/CFT 政策。您完成签署即表示已阅读、理解并将予以遵守。本确认书须每年完成一次。',
+        eyebrow: '合规 · 需完成年度声明',
+        title: '反洗钱与反恐怖主义融资声明',
+        subtitle: '请审阅下方 BIT 的 AML/CFT 政策。您完成签署即表示已阅读、理解并将予以遵守。本声明须每年签署一次。',
         periodParty: '政策主体',
-        periodYear: '确认周期',
+        periodYear: '声明年度',
         agreementMeta: '政策引用与您的义务',
-        policyRefText: '作为员工，您须遵守 BIT 的官方《反洗钱与反恐怖主义融资（AML/CFT）政策》。签署前请阅读完整政策原文：',
         summaryLead: '签署即表示您确认以下个人义务。以下内容与 BIT 的 AML/CFT 政策及适用的新加坡要求一致——MAS Notice PSN02（数字支付代币服务）、CDSA 及 TSOFA。以完整政策为准。',
-        sigTitle: '签署确认书',
+        sigTitle: '签署声明',
         sigStatus: '待签署',
         lblEmail: '电子邮箱',
         lblName: '法定全名',
@@ -1076,21 +1035,21 @@
         lblAgree: '本人确认已阅读并理解 BIT 的完整《AML/CFT 政策》（见 www.bit.com/aml），接受并将履行上述个人义务，完成所有必需的培训，且所提供的信息真实准确。',
         btnText: '签署',
         btnSigning: '提交中…',
-        successTitle: '确认已记录',
-        successSubtitle: '您的 AML/CFT 合规确认已记录。下方为电子签署凭证。',
+        successTitle: '声明已记录',
+        successSubtitle: '您的 AML/CFT 声明已记录。下方为电子签署凭证。',
         receiptStatus: '已记录',
         receiptId: '凭证',
         rSigner: '签署人',
         rEmail: '邮箱',
-        rPeriod: '确认周期',
+        rPeriod: '声明年度',
         rTimestamp: '时间戳',
         rToken: '令牌',
         rFingerprint: '指纹',
         downloadBtn: '下载签署副本',
         invalidTitle: '链接无效',
-        invalidSubtitle: '本链接未包含有效的确认令牌。请联系合规团队重新获取链接。',
-        usedTitle: '确认书已提交',
-        usedSubtitle: '本确认链接已在当前周期内使用。每个链接仅供单次提交。如需新的链接，请联系合规团队。'
+        invalidSubtitle: '本链接未包含有效的声明令牌。请联系合规团队重新获取链接。',
+        usedTitle: '声明已提交',
+        usedSubtitle: '本声明链接已在当前年度内使用。每个链接仅供单次提交。如需新的链接，请联系合规团队。'
       }
     };
 
@@ -1100,7 +1059,7 @@
       currentLang = lang;
       const t = i18n[lang];
       document.documentElement.lang = t.htmlLang;
-      document.title = lang === 'zh' ? 'AML/CFT · 年度确认' : 'AML/CFT · Annual Attestation';
+      document.title = lang === 'zh' ? 'AML/CFT · 年度声明' : 'AML/CFT · Annual Attestation';
       document.querySelectorAll('[data-i18n]').forEach((el) => {
         const key = el.getAttribute('data-i18n');
         if (t[key]) el.textContent = t[key];
